@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction &#8212; Apache DataFusion  documentation</title>
+    <title>Introduction &#8212; Apache DataFusion main documentation</title>
   
   
   
@@ -38,10 +38,17 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
 
-    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/documentation_options.js?v=a8da1a53"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contributor-guide/index';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.23.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/_static/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'main';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://datafusion.apache.org/contributor-guide/index.html" />
     <link rel="icon" href="../_static/favicon.svg"/>
@@ -52,7 +59,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="color-scheme" content="light dark"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
+  <meta name="docsearch:version" content="main" />
   
     
     <script src="../_static/searchtools.js"></script>
@@ -124,8 +131,8 @@
       
     
     
-    <img src="../_static/original.svg" class="logo__image only-light" alt="Apache DataFusion  documentation - Home"/>
-    <img src="../_static/original_dark.svg" class="logo__image only-dark pst-js-only" alt="Apache DataFusion  documentation - Home"/>
+    <img src="../_static/original.svg" class="logo__image only-light" alt="Apache DataFusion main documentation - Home"/>
+    <img src="../_static/original_dark.svg" class="logo__image only-dark pst-js-only" alt="Apache DataFusion main documentation - Home"/>
   
   
 </a></div>
@@ -147,6 +154,26 @@
 </button>
         </div>
       
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
       
         <div class="navbar-item">
 
@@ -204,6 +231,26 @@
     
     
       <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
         
           <div class="navbar-item">
 
@@ -609,8 +656,19 @@ benchmark, and then a PR with the code change that improves the benchmark.</p>
 </section>
 <section id="stale-prs">
 <h2>Stale PRs<a class="headerlink" href="#stale-prs" title="Link to this heading">#</a></h2>
+<p>Open, non-draft PRs with no activity for 14 days are automatically marked as
+draft if they have merge conflicts, failing CI checks, or an outstanding
+changes-requested review on the latest push. PRs awaiting review with none of
+these conditions remain ready for review. Cancelled, pending, skipped, or missing
+CI checks do not trigger drafting. PRs in the merge queue are excluded.</p>
+<p>The automation leaves a comment explaining why the PR was drafted. After
+addressing the listed items, mark the PR <strong>Ready for review</strong>. If you need help
+or a CI failure is unrelated to your changes, leave a comment on the PR.</p>
+<p>Maintainers can preview eligible PRs by running the <strong>Draft inactive PRs</strong>
+workflow manually with its default <code class="docutils literal notranslate"><span class="pre">dry_run</span></code> input enabled.</p>
 <p>Pull requests will be marked with a <code class="docutils literal notranslate"><span class="pre">stale</span></code> label after 60 days of inactivity and then closed 7 days after that.
-Commenting on the PR will remove the <code class="docutils literal notranslate"><span class="pre">stale</span></code> label.</p>
+Commenting on the PR will remove the <code class="docutils literal notranslate"><span class="pre">stale</span></code> label.
+The automatic draft notification also counts as activity and restarts this timer.</p>
 </section>
 <section id="ci-runners">
 <h2>CI Runners<a class="headerlink" href="#ci-runners" title="Link to this heading">#</a></h2>
@@ -635,6 +693,47 @@ Commenting on the PR will remove the <code class="docutils literal notranslate">
 <section id="github-runners">
 <h3>GitHub Runners<a class="headerlink" href="#github-runners" title="Link to this heading">#</a></h3>
 <p>We also use standard GitHub runners for some actions in the main repository; these are also runnable in forks.</p>
+<p>Small, short jobs run on <code class="docutils literal notranslate"><span class="pre">ubuntu-slim</span></code>, as ASF Infrastructure
+<a class="reference external" href="https://infra.apache.org/services.html">recommends</a>, because it starts quickly
+even when the shared <code class="docutils literal notranslate"><span class="pre">ubuntu-latest</span></code> pool is busy. Use it for any job that
+stays well within its limits: one vCPU, 5 GB of memory, 15 minutes, and no
+Docker engine, so no <code class="docutils literal notranslate"><span class="pre">container:</span></code> jobs or service containers. Slim has no Rust
+toolchain; jobs that need <code class="docutils literal notranslate"><span class="pre">cargo</span></code> install it with
+<code class="docutils literal notranslate"><span class="pre">.github/actions/setup-rustup</span></code>.</p>
+<section id="pull-requests-from-forks">
+<h4>Pull Requests from Forks<a class="headerlink" href="#pull-requests-from-forks" title="Link to this heading">#</a></h4>
+<p>DataFusion and its subprojects use substantial CI runner time. ASF Infrastructure
+identified them among its largest GitHub Actions users in
+<a class="reference external" href="https://github.com/apache/datafusion/issues/25148">#25148</a>. Fork CI reduces
+duplicate work on ASF’s shared runners.</p>
+<p>A pull request from a fork to <code class="docutils literal notranslate"><span class="pre">main</span></code> runs the Rust workflow on your fork, with
+your own GitHub Actions runners. The main repository runs only the fast lint jobs for
+such a pull request and adds a <code class="docutils literal notranslate"><span class="pre">Rust</span> <span class="pre">(fork)</span></code> check that links to the run on
+your fork. The merge queue runs the full workflow on the merged result before
+a pull request merges, so a green fork run does not replace it.</p>
+<p>To make this work:</p>
+<ol class="arabic simple">
+<li><p>Before you push your branch, open the <strong>Actions</strong> tab on your fork.
+Confirm the prompt to enable workflows.</p></li>
+<li><p>Keep the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of your fork in sync with upstream. Runs on your
+branches restore the build caches that a run on your <code class="docutils literal notranslate"><span class="pre">main</span></code> saves, so a
+synced fork builds much faster.</p></li>
+<li><p>Rebase your branch before you push. The fork run tests your branch as it
+is, while the merge queue tests it merged with <code class="docutils literal notranslate"><span class="pre">main</span></code>.</p></li>
+</ol>
+</section>
+<section id="obsolete-merge-queue-runs">
+<h4>Obsolete Merge Queue Runs<a class="headerlink" href="#obsolete-merge-queue-runs" title="Link to this heading">#</a></h4>
+<p>The <strong>Merge queue cleanup</strong> workflow finds unfinished merge queue CI runs whose
+queue branch was removed or now points to a different commit. It scans when a
+new merge group is created and every 15 minutes.</p>
+<p>Cleanup keeps runs for active groups, commits already in their target branch,
+and rerun attempts. Contributors can rerun an obsolete job to investigate a
+failure. A failed check alone does not cause cancellation.</p>
+<p>The workflow only reports candidates until a maintainer sets the repository
+Actions variable <code class="docutils literal notranslate"><span class="pre">MERGE_QUEUE_CLEANUP_ENABLED</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code>. Manual runs default
+to <code class="docutils literal notranslate"><span class="pre">dry_run</span></code>. To stop cancellation, remove the variable or set it to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+</section>
 </section>
 </section>
 </section>
@@ -710,7 +809,11 @@ Commenting on the PR will remove the <code class="docutils literal notranslate">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spot-instances">Spot Instances</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-runners">GitHub Runners</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-runners">GitHub Runners</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-requests-from-forks">Pull Requests from Forks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#obsolete-merge-queue-runs">Obsolete Merge Queue Runs</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
