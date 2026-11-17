@@ -26,24 +26,24 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=d08b24aa" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=543d738a" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
 
     <script src="../../_static/documentation_options.js?v=a8da1a53"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user-guide/sql/data_types';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.23.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.24.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/_static/versions.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'main';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -107,7 +107,7 @@
   
     <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
     <span class="fa-solid fa-bars"></span>
   </button>
   
@@ -179,14 +179,14 @@
 
 <div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
   <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
-    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
   </ul>
 </div></div>
       
@@ -206,7 +206,7 @@
   
 
   
-    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page" aria-expanded="false" aria-controls="pst-secondary-sidebar-modal">
       <span class="fa-solid fa-outdent"></span>
     </button>
   
@@ -220,7 +220,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
@@ -256,14 +256,14 @@
 
 <div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
   <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
-    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
   </ul>
 </div></div>
         
@@ -351,6 +351,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../library-user-guide/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../library-user-guide/securing-datafusion.html">Securing DataFusion</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../library-user-guide/upgrading/index.html">Upgrade Guides</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../library-user-guide/upgrading/57.0.0.html">DataFusion 57.0.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../library-user-guide/upgrading/56.0.0.html">DataFusion 56.0.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../library-user-guide/upgrading/55.0.0.html">DataFusion 55.0.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../library-user-guide/upgrading/54.0.0.html">DataFusion 54.0.0</a></li>
@@ -394,7 +395,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../contributor-guide/development_environment.html">Development Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributor-guide/architecture.html">Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributor-guide/architecture/dependency-graph.html">Workspace Dependency Graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../contributor-guide/testing.html">Testing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contributor-guide/testing.html">Testing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor-guide/testing_infrastructure.html">Testing Infrastructure</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributor-guide/api-health.html">API health policy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributor-guide/howtos.html">HOWTOs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributor-guide/release_management.html">Release Management</a></li>
@@ -457,7 +461,7 @@
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../../index.html" class="nav-link" aria-label="Home">
-        <i class="fa-solid fa-home"></i>
+        <i class="fa-solid fa-house"></i>
       </a>
     </li>
     
@@ -480,23 +484,10 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <!---
-  Licensed to the Apache Software Foundation (ASF) under one
-  or more contributor license agreements.  See the NOTICE file
-  distributed with this work for additional information
-  regarding copyright ownership.  The ASF licenses this file
-  to you under the Apache License, Version 2.0 (the
-  "License"); you may not use this file except in compliance
-  with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing,
-  software distributed under the License is distributed on an
-  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-  KIND, either express or implied.  See the License for the
-  specific language governing permissions and limitations
-  under the License.
+  <!--
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: See the NOTICE file distributed with this work for additional information regarding copyright ownership
+SPDX-FileContributor: Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements
 -->
 <section id="data-types">
 <h1>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">#</a></h1>
@@ -637,10 +628,22 @@ an error when the length is passed, set <code class="docutils literal notranslat
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">DATE</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Date32</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">TIME</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">TIME</span></code>, <code class="docutils literal notranslate"><span class="pre">TIME(9)</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Time64(Nanosecond)</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">TIMESTAMP</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMESTAMP(p)</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMESTAMP(p)</span> <span class="pre">WITHOUT</span> <span class="pre">TIME</span> <span class="pre">ZONE</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">TIME(0)</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Time32(Second)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">TIME(3)</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Time32(Millisecond)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">TIME(6)</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Time64(Microsecond)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">TIMESTAMP</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMESTAMP(p)</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMESTAMP(p)</span> <span class="pre">WITHOUT</span> <span class="pre">TIME</span> <span class="pre">ZONE</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Timestamp(unit,</span> <span class="pre">None)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">DATETIME</span></code>, <code class="docutils literal notranslate"><span class="pre">DATETIME(p)</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Timestamp(unit,</span> <span class="pre">None)</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">TIMESTAMPTZ(p)</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMESTAMP(p)</span> <span class="pre">WITH</span> <span class="pre">TIME</span> <span class="pre">ZONE</span></code></p></td>
@@ -668,12 +671,15 @@ aware type here, because their session time zone always has a value.</p>
 <p>Set <code class="docutils literal notranslate"><span class="pre">datafusion.execution.time_zone</span></code> to make these types aware. <code class="docutils literal notranslate"><span class="pre">'UTC'</span></code> is a
 good value.</p>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">unit</span></code> comes from the optional precision <code class="docutils literal notranslate"><span class="pre">p</span></code> on the two <code class="docutils literal notranslate"><span class="pre">TIMESTAMP</span></code> rows. Use
+<p><code class="docutils literal notranslate"><span class="pre">unit</span></code> comes from the optional precision <code class="docutils literal notranslate"><span class="pre">p</span></code> on the <code class="docutils literal notranslate"><span class="pre">TIMESTAMP</span></code> and <code class="docutils literal notranslate"><span class="pre">DATETIME</span></code>
+rows. Use
 <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">6</span></code> or <code class="docutils literal notranslate"><span class="pre">9</span></code> for <code class="docutils literal notranslate"><span class="pre">Second</span></code>, <code class="docutils literal notranslate"><span class="pre">Millisecond</span></code>, <code class="docutils literal notranslate"><span class="pre">Microsecond</span></code> or <code class="docutils literal notranslate"><span class="pre">Nanosecond</span></code>.
 DataFusion rejects each other value of <code class="docutils literal notranslate"><span class="pre">p</span></code>. If you omit <code class="docutils literal notranslate"><span class="pre">p</span></code>, the unit is
 <code class="docutils literal notranslate"><span class="pre">Nanosecond</span></code>. The precision goes after <code class="docutils literal notranslate"><span class="pre">TIMESTAMPTZ</span></code>, but before
 <code class="docutils literal notranslate"><span class="pre">WITH</span> <span class="pre">TIME</span> <span class="pre">ZONE</span></code>: use <code class="docutils literal notranslate"><span class="pre">TIMESTAMPTZ(3)</span></code> or <code class="docutils literal notranslate"><span class="pre">TIMESTAMP(3)</span> <span class="pre">WITH</span> <span class="pre">TIME</span> <span class="pre">ZONE</span></code>.
-<code class="docutils literal notranslate"><span class="pre">DATE</span></code>, <code class="docutils literal notranslate"><span class="pre">TIME</span></code> and <code class="docutils literal notranslate"><span class="pre">INTERVAL</span></code> do not accept a precision.</p>
+<code class="docutils literal notranslate"><span class="pre">TIME</span></code> accepts the same precisions and an optional <code class="docutils literal notranslate"><span class="pre">WITHOUT</span> <span class="pre">TIME</span> <span class="pre">ZONE</span></code> clause.
+<code class="docutils literal notranslate"><span class="pre">TIME</span> <span class="pre">WITH</span> <span class="pre">TIME</span> <span class="pre">ZONE</span></code> and <code class="docutils literal notranslate"><span class="pre">TIMETZ</span></code> are unsupported.
+<code class="docutils literal notranslate"><span class="pre">DATE</span></code> and <code class="docutils literal notranslate"><span class="pre">INTERVAL</span></code> do not accept a precision.</p>
 </section>
 <section id="boolean-types">
 <h2>Boolean Types<a class="headerlink" href="#boolean-types" title="Link to this heading">#</a></h2>
@@ -777,9 +783,6 @@ set to <code class="docutils literal notranslate"><span class="pre">c0</span></c
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SET</span></code></p></td>
 <td class="text-left"><p><em>Not yet supported</em></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">DATETIME</span></code></p></td>
-<td class="text-left"><p><em>Not yet supported</em></p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -821,7 +824,7 @@ set to <code class="docutils literal notranslate"><span class="pre">c0</span></c
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
@@ -881,8 +884,8 @@ set to <code class="docutils literal notranslate"><span class="pre">c0</span></c
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
 
 <!-- Based on pydata_sphinx_theme/footer.html -->
 <footer class="footer mt-5 mt-md-0">
